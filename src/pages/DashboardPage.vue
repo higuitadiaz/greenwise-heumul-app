@@ -13,13 +13,13 @@
         <IndicatorCard title="Kilos MTD" value="13,783" :progress="0.39" :target="35000" />
       </div>
       <div class="col-12 col-md-3">
-        <IndicatorCard title="Productores" value="150" :progress="0.6" :target="250" />
+        <IndicatorCard title="Productores" value="216" :progress="0.87" :target="250" />
       </div>
       <div class="col-12 col-md-3">
-        <Gauge :value="65" />
+        <Gauge title="Precisión" :value="95.3" />
       </div>
       <div class="col-12 col-md-3">
-        <Gauge :value="80" />
+        <Gauge title="Confianza" :value="99" />
       </div>
     </div>
 

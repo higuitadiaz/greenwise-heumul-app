@@ -12,7 +12,7 @@
         />
 
         <q-toolbar-title>
-          Huemul App - Material Recolectado
+          Monitoreo en Tiempo Real de Material Recolectado en Origen
         </q-toolbar-title>
 
         <q-btn flat round dense icon="eco" to="/" />

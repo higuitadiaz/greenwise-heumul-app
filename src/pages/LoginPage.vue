@@ -3,10 +3,10 @@
     <q-card class="auth-card">
       <q-card-section class="text-center">
         <q-avatar size="80px" font-size="40px" color="primary" text-color="white">
-          HA
+          GW
         </q-avatar>
-        <div class="text-h5 q-mt-md text-primary">Huemul App</div>
-        <div class="text-subtitle1 q-mt-sm">Monitoreo de Huella de Carbono</div>
+        <div class="text-h5 q-mt-md text-primary">GreenWiser App</div>
+        <div class="text-subtitle1 q-mt-sm">Monitoreo de Recolección de residuos</div>
       </q-card-section>
 
       <q-card-section>
