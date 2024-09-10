@@ -1,0 +1,72 @@
+// Variables de color
+
+
+// Estilos globales
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #F1F8E9;
+  color: #333;
+}
+
+.page-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.text-primary {
+  color: $primary;
+}
+
+.bg-primary {
+  background-color: $primary;
+}
+
+.q-card {
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1), 0 1px 3px rgba(0,0,0,0.08);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+
+  &:hover {
+    box-shadow: 0 7px 14px rgba(0,0,0,0.15), 0 5px 5px rgba(0,0,0,0.12);
+  }
+}
+
+.auth-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, $secondary 0%, $primary 100%);
+}
+
+.auth-card {
+  width: 100%;
+  max-width: 400px;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+// Estilos para los gráficos
+.chart-container {
+  background-color: white;
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+// Estilos para los indicadores
+.indicator-card {
+  background-color: white;
+  border-left: 4px solid $accent;
+}
+
+// Estilos para la barra de navegación
+.q-header {
+  background-color: $primary;
+}
+
+// Estilos para los botones
+.q-btn {
+  text-transform: none;
+  font-weight: 500;
+}
