@@ -20,6 +20,20 @@ const chartData = computed(() => props.data);
 const chartOptions = {
   responsive: true,
   maintainAspectRatio: false,
+  plugins: {
+    legend: {
+      position: 'right' as const,
+    },
+    title: {
+      display: true,
+      text: 'Distribución de Materiales',
+      color: '#2E7D32',
+      font: {
+        size: 16,
+        weight: 'bold',
+      }
+    },
+  }
 };
 </script>
 

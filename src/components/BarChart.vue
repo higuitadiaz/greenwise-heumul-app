@@ -27,6 +27,20 @@ const chartOptions = {
     y: {
       stacked: true
     }
+  },
+  plugins: {
+    legend: {
+      position: 'bottom' as const,
+    },
+    title: {
+      display: true,
+      text: 'TOP 5 Productor / Recaudación diaría',
+      color: '#2E7D32',
+      font: {
+        size: 16,
+        weight: 'bold',
+      }
+    }
   }
 };
 </script>

@@ -27,4 +27,4 @@ export default boot(({ app }) => {
   app.config.globalProperties.$auth = auth;
 });
 
-export { auth };
+export { auth, app };

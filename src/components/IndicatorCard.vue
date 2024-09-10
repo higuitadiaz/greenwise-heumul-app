@@ -31,6 +31,6 @@ const progressColor = computed(() => {
 
 <style scoped>
 .indicator-card {
-  width: 250px;
+  width: 100%;
 }
 </style>

@@ -23,7 +23,16 @@ const chartOptions = {
   plugins: {
     filler: {
       propagate: true
-    }
+    },
+    title: {
+      display: true,
+      text: 'Recaudación Acumulada',
+      color: '#2E7D32',
+      font: {
+        size: 16,
+        weight: 'bold',
+      }
+    },
   }
 };
 </script>
