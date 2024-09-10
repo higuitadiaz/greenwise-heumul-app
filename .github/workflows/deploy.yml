@@ -1,4 +1,4 @@
-name: Deploy Huemul App
+name: Deploy Huemul App Project
 
 on:
   push:
