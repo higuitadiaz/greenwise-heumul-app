@@ -34,13 +34,13 @@
           </q-item-section>
           <q-item-section>Productor</q-item-section>
         </q-item>
-        <q-item clickable v-ripple to="/cities">
+        <q-item clickable v-ripple active-class="text-secondary" to="/cities">
           <q-item-section avatar>
             <q-icon name="location_city" />
           </q-item-section>
           <q-item-section>Ciudades</q-item-section>
         </q-item>
-        <q-item clickable v-ripple to="/reports">
+        <q-item clickable v-ripple active-class="text-secondary" to="/reports">
           <q-item-section avatar>
             <q-icon name="bar_chart" />
           </q-item-section>

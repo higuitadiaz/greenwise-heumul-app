@@ -1,21 +1,21 @@
 <template>
-  <div class="fullscreen bg-blue text-white text-center q-pa-md flex flex-center">
+  <div class="fullscreen bg-green-1 text-green-9 text-center q-pa-md flex flex-center">
     <div>
-      <div style="font-size: 30vh">
-        404
+      <div style="font-size: 10vh">
+        En Construcción
       </div>
 
-      <div class="text-h2" style="opacity:.4">
-        Oops. Nothing here...
+      <div class="text-h3" style="opacity:.4">
+        Este sitio está en construcción. Vuelve pronto.
       </div>
 
       <q-btn
         class="q-mt-xl"
         color="white"
-        text-color="blue"
+        text-color="green-7"
         unelevated
         to="/"
-        label="Go Home"
+        label="Ir al inicio"
         no-caps
       />
     </div>

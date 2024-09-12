@@ -1,28 +1,32 @@
 <template>
-  <q-card class="filter-panel">
-    <q-card-section class="row">
-      <div class="col row q-col-gutter-md">
-      <q-select
-        v-model="selectedMonth"
-        :options="months"
-        label="Fecha"
-        class="col q-mt-sm"
-      />
-      <q-select
-        v-model="selectedProduct"
-        :options="products"
-        label="Comuna"
-        class="col q-mt-sm"
-      />
-      <q-select
-        v-model="selectedProduct"
-        :options="products"
-        label="Productor"
-        class="col q-mt-sm"
-      />
+  <q-card flat class="full-width bg-transparent">
+    <div class="row">
+      <div class="col row q-col-gutter-md q-mr-sm">
+        <q-select
+          v-model="selectedMonth"
+          filled
+          :options="months"
+          label="Fecha"
+          class="col q-mt-sm"
+        />
+        <q-select
+          v-model="selectedComuna"
+          filled
+          :options="comunas"
+          label="Comuna"
+          class="col q-mt-sm"
+        />
+        <q-select
+          v-model="selectedProduct"
+          filled
+          :options="products"
+          label="Productor"
+          class="col q-mt-sm"
+        />
       </div>
+
       <q-btn @click="applyFilters" color="primary" label="Filtrar" icon="filter_alt" class="q-mt-md" />
-    </q-card-section>
+    </div>
   </q-card>
 </template>
 
@@ -33,6 +37,7 @@ const emits = defineEmits(['filter']);
 
 const selectedMonth = ref<null|{label:string, value:string}>(null);
 const selectedProduct = ref<null|{label:string, value:string}>(null);
+const selectedComuna = ref<null|{label:string, value:string}>(null);
 
 const months = [
   { label: 'Enero', value: 'Ene' },
@@ -41,6 +46,24 @@ const months = [
   { label: 'Abril', value: 'Abr' },
   { label: 'Mayo', value: 'May' },
   { label: 'Junio', value: 'Jun' }
+];
+
+const comunas = [
+  { label: 'San Miguel', value: 'san_miguel' },
+  { label: 'Providencia', value: 'Providencia' },
+  { label: 'San Ramón', value: 'san_ramon' },
+  { label: 'Huechuraba', value: 'huechuraba' },
+  { label: 'Las Condes', value: 'las_condes' },
+  { label: 'Santiago', value: 'santiago' },
+];
+
+const materials = [
+  { label: 'Plástico PET', value: 'pet' },
+  { label: 'Plástico PP', value: 'pp'},
+  { label: 'Plástico HDPE', value: 'hdpe'},
+  { label: 'Latas', value: 'latas'},
+  { label: 'Carton', value: 'carton'},
+  { label: 'Otros', value:'otros'}
 ];
 
 const products = [
@@ -56,8 +79,4 @@ function applyFilters() {
 }
 </script>
 
-<style scoped>
-.filter-panel {
-  width: 100%;
-}
-</style>
+<style scoped></style>
